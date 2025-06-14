@@ -132,7 +132,7 @@ client.on(Events.InteractionCreate, async interaction => {
         { name: '❗ Importante', value: '¡Recuerda no mencionar al Staff! Te atenderán lo antes posible.' }
       )
       .setFooter({ text: `Creado el ${new Date().toLocaleString()}` })
-      .setColor(0xAE03DE);
+      .setColor(0x38caea);
 
     const statusMenu = new StringSelectMenuBuilder()
       .setCustomId('ticket_status')
