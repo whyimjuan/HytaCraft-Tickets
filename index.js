@@ -212,14 +212,14 @@ client.on(Events.InteractionCreate, async interaction => {
 client.on('messageCreate', async (message) => {
   if (message.content === '!setticketchannel' && message.member.permissions.has(PermissionsBitField.Flags.Administrator)) {
     const embed = new EmbedBuilder()
-      .setTitle('**Tickets | HytaCraft**')
-      .setDescription('\n> Abre un ticket para recibir ayuda del equipo del STAFF de HytaCraft.')
+      .setTitle('👉 **AYUDA AL JUGADOR** 👈')
+      .setDescription('**¡Hola, querido usuario**! Si necesitas ayuda, hacer un reporte o tienes algun problema, no dudes en abrir un ticket aqui, te estara atendiendo un personal./n n> **ADVERTENCIA**: Si abres un ticket para bromear, serás baneado permanentemente del **Discord**.')
       .setColor(0x38caea)
       .setImage('https://media.discordapp.net/attachments/1382097919506776085/1382445129264005270/Sin_titulo-2.png?ex=684b2ddb&is=6849dc5b&hm=d81058810b5c2d1983a8a550922cce894aa2add857d67efa9b7ae96470b27af1&=&format=webp&quality=lossless&width=1860&height=391');
 
     const menu = new StringSelectMenuBuilder()
       .setCustomId('ticket_menu')
-      .setPlaceholder('Selecciona una categoría...')
+      .setPlaceholder('Selecciona tu problema')
       .addOptions([
         { label: 'General', emoji: '🌍', value: 'general' },
         { label: 'Bugs', emoji: '🛠️', value: 'bugs' },
