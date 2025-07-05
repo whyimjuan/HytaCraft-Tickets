@@ -86,16 +86,16 @@ client.on(Events.InteractionCreate, async interaction => {
   if (interaction.isStringSelectMenu() && interaction.customId === 'ticket_menu') {
     const modal = new ModalBuilder()
       .setCustomId(`ticket_modal_${interaction.values[0]}`)
-      .setTitle('**SOPORTE DE HYTACRAFT**')
+      .setTitle('SOPORTE DE HYTACRAFT')
       .addComponents(
         new ActionRowBuilder().addComponents(
-          new TextInputBuilder().setCustomId('usuario').setLabel('¿Cuál es tu nombre de usuario?').setStyle(TextInputStyle.Short).setRequired(true)
+          new TextInputBuilder().setCustomId('usuario').setLabel('Nombre de usuario').setStyle(TextInputStyle.Short).setRequired(true)
         ),
         new ActionRowBuilder().addComponents(
-          new TextInputBuilder().setCustomId('modalidad').setLabel('¿En qué modalidad ocurrió el problema?').setStyle(TextInputStyle.Short).setRequired(true)
+          new TextInputBuilder().setCustomId('modalidad').setLabel('Modalidad').setStyle(TextInputStyle.Short).setRequired(true)
         ),
         new ActionRowBuilder().addComponents(
-          new TextInputBuilder().setCustomId('descripcion').setLabel('Describe tu problema').setStyle(TextInputStyle.Paragraph).setRequired(true)
+          new TextInputBuilder().setCustomId('descripcion').setLabel('Descripción o comentario').setStyle(TextInputStyle.Paragraph).setRequired(true)
         )
       );
     await interaction.showModal(modal);
