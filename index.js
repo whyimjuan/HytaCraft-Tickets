@@ -215,7 +215,7 @@ client.on('messageCreate', async (message) => {
       .setTitle('👉 **AYUDA AL JUGADOR** 👈')
       .setDescription('**¡Hola, querido usuario**! Si necesitas ayuda, hacer un reporte o tienes algun problema, no dudes en abrir un ticket aqui, te estara atendiendo un personal./n n> **ADVERTENCIA**: Si abres un ticket para bromear, serás baneado permanentemente del **Discord**.')
       .setColor(0x38caea)
-      .setImage('https://media.discordapp.net/attachments/1382097919506776085/1382445129264005270/Sin_titulo-2.png?ex=684b2ddb&is=6849dc5b&hm=d81058810b5c2d1983a8a550922cce894aa2add857d67efa9b7ae96470b27af1&=&format=webp&quality=lossless&width=1860&height=391');
+      .setImage('https://cdn.discordapp.com/attachments/1381444195243266160/1391210566290247711/raw.png?ex=686b114e&is=6869bfce&hm=b1bc47b0f0036e61e0b13d568223aa4d6043b79f3898103cfcf27170525147df&');
 
     const menu = new StringSelectMenuBuilder()
       .setCustomId('ticket_menu')
