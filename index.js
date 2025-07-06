@@ -213,8 +213,8 @@ client.on('messageCreate', async (message) => {
   if (message.content === '!setticketchannel' && message.member.permissions.has(PermissionsBitField.Flags.Administrator)) {
     const embed = new EmbedBuilder()
       .setTitle('👉 **AYUDA AL JUGADOR** 👈')
-      .setDescription('**¡Hola, querido usuario**! Si necesitas ayuda, hacer un reporte o tienes algun problema, no dudes en abrir un ticket aqui, te estara atendiendo un personal./n n> **ADVERTENCIA**: Si abres un ticket para bromear, serás baneado permanentemente del **Discord**.')
-      .setColor(0x38caea)
+      .setDescription('**¡Hola, querido usuario**! Si necesitas ayuda, hacer un reporte o tienes algun problema, no dudes en abrir un ticket aqui, te estara atendiendo un personal.\n> **ADVERTENCIA**: Si abres un ticket para bromear, serás baneado permanentemente del **Discord**.')
+      .setColor(0xa88532)
       .setImage('https://cdn.discordapp.com/attachments/1381444195243266160/1391210566290247711/raw.png?ex=686b114e&is=6869bfce&hm=b1bc47b0f0036e61e0b13d568223aa4d6043b79f3898103cfcf27170525147df&');
 
     const menu = new StringSelectMenuBuilder()
